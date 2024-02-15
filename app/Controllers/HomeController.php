@@ -11,7 +11,7 @@ class HomeController
     public function index(Request $request, Response $response)
     {
 
-        $response->end("index");
+        $response->end("index2");
 
 
 //        $users = DB::table('users')->get();

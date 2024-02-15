@@ -1,27 +1,13 @@
 <?php
-
-
-ini_set('log_errors', 1);
-
-
-ini_set('error_log', '/path/to/php_error.log');
-
-
-error_reporting(E_ALL);
-
-
-
-
-
 require_once __DIR__ . '/vendor/autoload.php';
-use App\Controllers\HomeController;
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-var_dump(env('DB_CONNECTION'));
+
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => env('DB_CONNECTION'),
