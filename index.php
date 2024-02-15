@@ -23,15 +23,10 @@ $capsule->addConnection([
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
-
 $http = new Swoole\Http\Server("0.0.0.0", 9501);
-
-
 $http->on("start", function ($server) {
     echo "Swoole HTTP server is started at http://127.0.0.1:9501\n";
 });
-
-
 
 $http->on('request', function (Request $request, Response $response) {    $response->header("Content-Type", "text/plain");
     $route = $request->server['request_uri'];
