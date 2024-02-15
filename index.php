@@ -38,7 +38,7 @@ $http->on('request', function (Request $request, Response $response) {    $respo
 
     switch ($route) {
         case '/':
-            $controller = new App\Controllers\HomeController;
+            $controller = new App\Controllers\LoanController;
             $controller->index($request, $response);
             break;
         default:
