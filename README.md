@@ -35,7 +35,7 @@ To install this project, follow these steps:
 
 4. Run the server using the following command:
    ```bash
-   php swoole-server.php
+   php index.php
    ```
 
 ## Usage
@@ -47,13 +47,11 @@ swoole-mvc/
 ├── app/                # Core application code (Controllers, Models, etc.)
 │   ├── Controllers/    # Controllers
 │   ├── Models/         # Models
-│   ├── Views/          # Views
 │
 ├── config/             # Project configurations
 │
-├── public/             # Public files (like index.php)
 │
-├── swoole-server.php   # Entry point for the Swoole server
+├── index.php   # Entry point for the Swoole server
 │
 └── composer.json       # Composer configuration
 ```
